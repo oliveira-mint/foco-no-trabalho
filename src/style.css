@@ -1,0 +1,176 @@
+/* ====== Fundo escuro ====== */
+window {
+    background-color: #1a1b26;
+}
+
+/* ====== Header bar ====== */
+headerbar {
+    background-color: #1a1b26;
+    border-bottom: 1px solid #24283b;
+}
+
+headerbar .title {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #c0caf5;
+}
+
+headerbar .subtitle {
+    font-weight: 400;
+    font-size: 0.85em;
+    opacity: 0.8;
+    color: #c0caf5;
+}
+
+/* ====== Botões ====== */
+button {
+    border-radius: 8px;
+    padding: 6px 14px;
+    transition: all 0.2s ease;
+    background-color: #24283b;
+    border: 1px solid transparent;
+    color: #c0caf5;
+}
+
+button:hover {
+    background-color: #2f3549;
+    border-color: #7aa2f7;
+    box-shadow: 0 2px 8px rgba(122, 162, 247, 0.2);
+}
+
+button:active {
+    background-color: #1a1b26;
+}
+
+button.flat {
+    background: transparent;
+    border: none;
+}
+
+button.flat:hover {
+    background: #24283b;
+    border: 1px solid transparent;
+}
+
+button.circular {
+    border-radius: 50%;
+    padding: 6px;
+    min-width: 36px;
+    min-height: 36px;
+}
+
+button.destructive-action {
+    background-color: #f7768e;
+    color: #1a1b26;
+}
+
+button.destructive-action:hover {
+    background-color: #d06a7e;
+    border-color: #f7768e;
+}
+
+button.success {
+    background-color: #9ece6a;
+    color: #1a1b26;
+}
+
+button.success:hover {
+    background-color: #8cbd5a;
+    border-color: #9ece6a;
+}
+
+button.compact {
+    padding: 4px 10px;
+    font-size: 0.9em;
+}
+
+/* ====== Preferências (grupo de sons) ====== */
+preferencesgroup {
+    background-color: #24283b;
+    border-radius: 12px;
+    padding: 6px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+preferencesrow {
+    padding: 8px 16px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+preferencesrow:hover {
+    background-color: #2a2e3f;
+}
+
+preferencesrow:last-child {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+preferencesrow .title {
+    color: #c0caf5;
+    font-weight: 500;
+}
+
+preferencesrow .icon {
+    color: #7aa2f7;
+}
+
+/* ====== Escala de volume ====== */
+scale.volume-scale {
+    min-width: 100px;
+}
+
+scale.volume-scale trough {
+    background-color: #3b3f54;
+    min-height: 4px;
+    border-radius: 2px;
+}
+
+scale.volume-scale slider {
+    background-color: #7aa2f7;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+    transition: all 0.2s ease;
+}
+
+scale.volume-scale slider:hover {
+    transform: scale(1.1);
+    background-color: #5d8fcf;
+}
+
+scale.volume-scale fill {
+    background-color: #7aa2f7;
+}
+
+/* ====== Barra de rolagem ====== */
+scrolledwindow.no-scrollbar scrollbar {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+scrolledwindow.no-scrollbar scrollbar:hover {
+    opacity: 0.8;
+}
+
+scrollbar slider {
+    background-color: #7aa2f7;
+    border-radius: 4px;
+    min-width: 6px;
+    min-height: 30px;
+}
+
+scrollbar slider:hover {
+    background-color: #5d8fcf;
+}
+
+/* ====== Diálogo Sobre ====== */
+dialog .title {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+dialog .subtitle {
+    color: #9aa5ce;
+}

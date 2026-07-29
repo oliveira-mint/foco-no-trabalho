@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.focodotrabalho.App</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Foco no Trabalho</name>
+  <summary>Ambiente sonoro para concentração</summary>
+
+  <description>
+    <p>
+      O Foco no Trabalho é um aplicativo simples e eficiente para reproduzir sons de fundo e criar um ambiente agradável para concentração, estudo, trabalho e relaxamento.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">org.focodotrabalho.App.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Tela principal com os controles de som</caption>
+      <image>https://raw.githubusercontent.com/oliveira-mint/foco-no-trabalho/main/data/screenshots/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://github.com/oliveira-mint/foco-no-trabalho</url>
+
+  <categories>
+    <category>Utility</category>
+    <category>Audio</category>
+  </categories>
+
+  <content_rating type="oars-1.1" />
+</component>
