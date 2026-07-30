@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.focodotrabalho.App" path="/org/focodotrabalho/App/">
+    <!-- Chaves para cada som: volume (0-100) e estado (true = tocando) -->
+    <key name="chuva-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+      <summary>Volume da Chuva</summary>
+    </key>
+    <key name="chuva-playing" type="b">
+      <default>false</default>
+      <summary>Chuva está tocando?</summary>
+    </key>
+    <key name="trovao-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="trovao-playing" type="b">
+      <default>false</default>
+    </key>
+    <key name="cafeteria-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="cafeteria-playing" type="b">
+      <default>false</default>
+    </key>
+    <key name="lareira-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="lareira-playing" type="b">
+      <default>false</default>
+    </key>
+    <key name="lofi-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="lofi-playing" type="b">
+      <default>false</default>
+    </key>
+    <key name="passaros-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="passaros-playing" type="b">
+      <default>false</default>
+    </key>
+    <key name="riacho-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="riacho-playing" type="b">
+      <default>false</default>
+    </key>
+    <key name="teclado-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="teclado-playing" type="b">
+      <default>false</default>
+    </key>
+    <key name="vento-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="vento-playing" type="b">
+      <default>false</default>
+    </key>
+  </schema>
+</schemalist>

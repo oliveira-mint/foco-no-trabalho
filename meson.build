@@ -1,40 +1,18 @@
-project('foco-no-trabalho',
-  version: '0.1.0',
-  meson_version: '>= 0.59.0'
+project('foco-no-trabalho', 'c')
+
+# Instala o arquivo de esquema do GSettings (salvar configurações)
+install_data(
+    'org.focodotrabalho.App.gschema.xml',
+    install_dir: get_option('datadir') / 'glib-2.0' / 'schemas'
 )
 
-python = import('python').find_installation('python3')
+# Instala a pasta src inteira (onde estão seus códigos Python)
+install_subdir('src', install_dir: get_option('bindir') / 'foco-no-trabalho')
 
-pkgdatadir = join_paths(get_option('prefix'), 'share', meson.project_name())
-moduledir = join_paths(pkgdatadir, 'src')
-
-install_data(
-  'src/app.py',
-  'src/main.py',
-  'src/sound_manager.py',
-  'src/style.css',
-  'src/window.py',
-  install_dir: moduledir
-)
-
-install_subdir('data/sounds', install_dir: pkgdatadir)
-
-install_data(
-  'bin/foco-no-trabalho',
-  install_dir: get_option('bindir')
-)
-
-install_data(
-  'data/org.focodotrabalho.App.desktop',
-  install_dir: join_paths(get_option('prefix'), 'share', 'applications')
-)
-
-install_data(
-  'data/org.focodotrabalho.App.metainfo.xml',
-  install_dir: join_paths(get_option('prefix'), 'share', 'metainfo')
-)
-
-install_data(
-  'data/org.focodotrabalho.App.png',
-  install_dir: join_paths(get_option('prefix'), 'share', 'icons', 'hicolor', 'scalable', 'apps')
+# Gera o executável a partir do arquivo .in
+configure_file(
+    input: 'foco-no-trabalho.in',
+    output: 'foco-no-trabalho',
+    install_dir: get_option('bindir'),
+    configuration: configuration_data()
 )

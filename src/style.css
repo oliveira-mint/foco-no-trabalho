@@ -92,28 +92,45 @@ preferencesgroup {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-preferencesrow {
+row {
     padding: 8px 16px;
     background-color: transparent;
-    transition: background-color 0.2s ease;
+    border-left: 4px solid transparent;
+    transition: all 0.25s ease;
 }
 
-preferencesrow:hover {
+row:hover {
     background-color: #2a2e3f;
 }
 
-preferencesrow:last-child {
+row:last-child {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-preferencesrow .title {
+row .title {
     color: #c0caf5;
     font-weight: 500;
 }
 
-preferencesrow .icon {
+row .icon {
     color: #7aa2f7;
+}
+
+/* ====== INDICADOR DE SOM ATIVO ====== */
+row.active-sound {
+    background-color: #2d3248 !important;
+    border-left: 4px solid #7aa2f7 !important;
+}
+
+row.active-sound button.circular {
+    background-color: #7aa2f7 !important;
+    color: #1a1b26 !important;
+}
+
+row.active-sound button.circular:hover {
+    background-color: #89b4fa !important;
+    box-shadow: 0 0 10px rgba(122, 162, 247, 0.5) !important;
 }
 
 /* ====== Escala de volume ====== */
