@@ -5,3 +5,4 @@ build-dir/
 gschemas.compiled
 *.flatpak
 __pycache__/
+compilar.sh
