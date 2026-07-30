@@ -1,4 +1,8 @@
-project('foco-no-trabalho', 'c')
+project(
+    'foco-no-trabalho',
+    'c',
+    version: '1.1.0'
+)
 
 # Instala o arquivo de esquema do GSettings (salvar configurações)
 install_data(
