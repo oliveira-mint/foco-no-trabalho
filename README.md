@@ -1,6 +1,6 @@
 # 🎧 Foco no Trabalho
 
-Aplicativo nativo para Linux desenvolvido em Python com interface GTK4 / Libadwaita. Projetado para ajudar na concentração e produtividade através de sons ambientais personalizáveis e temporizador de foco.
+Aplicativo nativo para Linux desenvolvido em Python com interface GTK4 / Libadwaita. Projetado para ajudar na concentração e produtividade através de sons ambientais e personalizáveis.
 
 ---
 
