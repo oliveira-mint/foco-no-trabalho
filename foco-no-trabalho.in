@@ -1,2 +1,2 @@
 #!/bin/sh
-exec python3 /app/bin/foco-no-trabalho/main.py "$@"
+exec python3 /app/share/foco-no-trabalho/src/main.py "$@"

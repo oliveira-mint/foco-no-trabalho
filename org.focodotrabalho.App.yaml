@@ -2,24 +2,16 @@ app-id: org.focodotrabalho.App
 runtime: org.gnome.Platform
 runtime-version: '48'
 sdk: org.gnome.Sdk
-sdk-extensions:
-  - org.freedesktop.Platform.GStreamer.good
 command: foco-no-trabalho
-
 finish-args:
+  - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
   - --socket=pulseaudio
-  - --share=ipc
   - --device=dri
-  - --filesystem=xdg-run/dconf
-  - --filesystem=~/.config/dconf:ro
-
 modules:
   - name: foco-no-trabalho
     buildsystem: meson
     sources:
       - type: dir
         path: .
-    post-install:
-      - glib-compile-schemas /app/share/glib-2.0/schemas

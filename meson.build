@@ -4,19 +4,38 @@ project(
     version: '1.1.0'
 )
 
-# Instala o arquivo de esquema do GSettings (salvar configurações)
+gnome = import('gnome')
+
+# 1. Instala o atalho no Menu do Linux (.desktop)
+install_data(
+    'org.focodotrabalho.App.desktop',
+    install_dir: get_option('datadir') / 'applications'
+)
+
+# 2. Instala o ícone oficial da aplicação (PNG)
+install_data(
+    'data/org.focodotrabalho.App.png',
+    install_dir: get_option('datadir') / 'icons/hicolor/512x512/apps'
+)
+
+# 3. Instala o esquema do GSettings
 install_data(
     'org.focodotrabalho.App.gschema.xml',
     install_dir: get_option('datadir') / 'glib-2.0' / 'schemas'
 )
 
-# Instala a pasta src inteira (onde estão seus códigos Python)
-install_subdir('src', install_dir: get_option('bindir') / 'foco-no-trabalho')
+# 4. Instala as pastas de código e dados em /app/share/foco-no-trabalho
+install_subdir('src', install_dir: get_option('datadir') / 'foco-no-trabalho')
+install_subdir('data', install_dir: get_option('datadir') / 'foco-no-trabalho')
 
-# Gera o executável a partir do arquivo .in
+# Compila os esquemas do GSettings automaticamente
+gnome.post_install(glib_compile_schemas: true)
+
+# Gera o executável com permissão de execução
 configure_file(
     input: 'foco-no-trabalho.in',
     output: 'foco-no-trabalho',
     install_dir: get_option('bindir'),
-    configuration: configuration_data()
+    configuration: configuration_data(),
+    install_mode: 'rwxr-xr-x'
 )
