@@ -2,6 +2,8 @@
 <schemalist>
   <schema id="org.focodotrabalho.App" path="/org/focodotrabalho/App/">
     <!-- Chaves para cada som: volume (0-100) e estado (true = tocando) -->
+
+    <!-- Sons Originais -->
     <key name="chuva-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -11,6 +13,7 @@
       <default>false</default>
       <summary>Chuva está tocando?</summary>
     </key>
+
     <key name="trovao-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -18,6 +21,7 @@
     <key name="trovao-playing" type="b">
       <default>false</default>
     </key>
+
     <key name="cafeteria-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -25,6 +29,7 @@
     <key name="cafeteria-playing" type="b">
       <default>false</default>
     </key>
+
     <key name="lareira-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -32,6 +37,7 @@
     <key name="lareira-playing" type="b">
       <default>false</default>
     </key>
+
     <key name="lofi-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -39,6 +45,7 @@
     <key name="lofi-playing" type="b">
       <default>false</default>
     </key>
+
     <key name="passaros-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -46,6 +53,7 @@
     <key name="passaros-playing" type="b">
       <default>false</default>
     </key>
+
     <key name="riacho-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -53,6 +61,7 @@
     <key name="riacho-playing" type="b">
       <default>false</default>
     </key>
+
     <key name="teclado-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -60,6 +69,7 @@
     <key name="teclado-playing" type="b">
       <default>false</default>
     </key>
+
     <key name="vento-volume" type="i">
       <default>20</default>
       <range min="0" max="100"/>
@@ -67,5 +77,55 @@
     <key name="vento-playing" type="b">
       <default>false</default>
     </key>
+
+    <!-- Novos Sons (Usando hífens/traços em vez de underline) -->
+    <key name="asmr-rosa-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="asmr-rosa-playing" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="ruido-rosa-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="ruido-rosa-playing" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="relaxando-1-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="relaxando-1-playing" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="relaxando-2-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="relaxando-2-playing" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="ruido-branco-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="ruido-branco-playing" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="gelando-volume" type="i">
+      <default>20</default>
+      <range min="0" max="100"/>
+    </key>
+    <key name="gelando-playing" type="b">
+      <default>false</default>
+    </key>
+
   </schema>
 </schemalist>

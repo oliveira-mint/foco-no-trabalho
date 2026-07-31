@@ -7,15 +7,24 @@ from gi.repository import Gtk, Adw, Gio, Gdk
 from sound_manager import SoundManager
 
 SOUND_KEYS = {
-    'chuva':     ('chuva-volume',     'chuva-playing'),
-    'trovao':    ('trovao-volume',    'trovao-playing'),
-    'cafeteria': ('cafeteria-volume', 'cafeteria-playing'),
-    'lareira':   ('lareira-volume',   'lareira-playing'),
-    'lofi':      ('lofi-volume',      'lofi-playing'),
-    'passaros':  ('passaros-volume',  'passaros-playing'),
-    'riacho':    ('riacho-volume',    'riacho-playing'),
-    'teclado':   ('teclado-volume',   'teclado-playing'),
-    'vento':     ('vento-volume',     'vento-playing'),
+    # Sons antigos
+    'chuva':        ('chuva-volume',        'chuva-playing'),
+    'trovao':       ('trovao-volume',       'trovao-playing'),
+    'cafeteria':    ('cafeteria-volume',    'cafeteria-playing'),
+    'lareira':      ('lareira-volume',      'lareira-playing'),
+    'lofi':         ('lofi-volume',         'lofi-playing'),
+    'passaros':     ('passaros-volume',     'passaros-playing'),
+    'riacho':       ('riacho-volume',       'riacho-playing'),
+    'teclado':      ('teclado-volume',      'teclado-playing'),
+    'vento':        ('vento-volume',        'vento-playing'),
+
+    # Novos sons (GSettings atualizado com hífens)
+    'asmr_rosa':    ('asmr-rosa-volume',    'asmr-rosa-playing'),
+    'ruido_rosa':   ('ruido-rosa-volume',   'ruido-rosa-playing'),
+    'relaxando_2':  ('relaxando-2-volume',  'relaxando-2-playing'),
+    'relaxando_1':  ('relaxando-1-volume',  'relaxando-1-playing'),
+    'ruido_branco': ('ruido-branco-volume', 'ruido-branco-playing'),
+    'gelando':      ('gelando-volume',      'gelando-playing'),
 }
 
 PRESETS_DATA = [
@@ -145,15 +154,21 @@ class FocoNoTrabalhoWindow(Adw.ApplicationWindow):
         # CARDS DE SONS INDIVIDUAIS
         # =========================================================
         sounds_data = [
-            ("Chuva",     "chuva",     "weather-showers-symbolic"),
-            ("Trovão",    "trovao",    "weather-storm-symbolic"),
-            ("Cafeteria", "cafeteria", "system-users-symbolic"),
-            ("Lareira",   "lareira",   "night-light-symbolic"),
-            ("Lofi",      "lofi",      "audio-headphones-symbolic"),
-            ("Pássaros",  "passaros",  "audio-speakers-symbolic"),
-            ("Riacho",    "riacho",    "weather-showers-scattered-symbolic"),
-            ("Teclado",   "teclado",   "input-keyboard-symbolic"),
-            ("Vento",     "vento",     "weather-windy-symbolic"),
+            ("Chuva",         "chuva",        "weather-showers-symbolic"),
+            ("Trovão",        "trovao",       "weather-storm-symbolic"),
+            ("Cafeteria",     "cafeteria",    "system-users-symbolic"),
+            ("Lareira",       "lareira",      "night-light-symbolic"),
+            ("Lofi",          "lofi",         "audio-headphones-symbolic"),
+            ("Pássaros",      "passaros",     "audio-speakers-symbolic"),
+            ("Riacho",        "riacho",       "weather-showers-scattered-symbolic"),
+            ("Teclado",       "teclado",      "input-keyboard-symbolic"),
+            ("Vento",         "vento",        "weather-windy-symbolic"),
+            ("ASMR Rosa",     "asmr_rosa",    "audio-headphones-symbolic"),
+            ("Ruído Rosa",    "ruido_rosa",   "audio-volume-high-symbolic"),
+            ("Relaxando 1",   "relaxando_1",  "media-playback-start-symbolic"),
+            ("Relaxando 2",   "relaxando_2",  "media-playback-start-symbolic"),
+            ("Ruído Branco",  "ruido_branco", "audio-volume-high-symbolic"),
+            ("Gelando",       "gelando",      "weather-clear-night-symbolic"),
         ]
 
         group = Adw.PreferencesGroup()
@@ -372,7 +387,7 @@ class FocoNoTrabalhoWindow(Adw.ApplicationWindow):
         box.set_margin_start(16)
         box.set_margin_end(16)
 
-        no_shortcuts_label = Gtk.Label(label="Nenhum atalho configurado.")
+        no_shortcuts_label = Gtk.Label(label="EM BREVE.")
         no_shortcuts_label.add_css_class("dim-label")
         box.append(no_shortcuts_label)
 

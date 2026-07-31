@@ -119,18 +119,18 @@ row .icon {
 
 /* ====== INDICADOR DE SOM ATIVO ====== */
 row.active-sound {
-    background-color: #2d3248 !important;
-    border-left: 4px solid #7aa2f7 !important;
+    background-color: #2d3248;
+    border-left: 4px solid #7aa2f7;
 }
 
 row.active-sound button.circular {
-    background-color: #7aa2f7 !important;
-    color: #1a1b26 !important;
+    background-color: #7aa2f7;
+    color: #1a1b26;
 }
 
 row.active-sound button.circular:hover {
-    background-color: #89b4fa !important;
-    box-shadow: 0 0 10px rgba(122, 162, 247, 0.5) !important;
+    background-color: #89b4fa;
+    box-shadow: 0 0 10px rgba(122, 162, 247, 0.5);
 }
 
 /* ====== Escala de volume ====== */
@@ -153,11 +153,10 @@ scale.volume-scale slider {
 }
 
 scale.volume-scale slider:hover {
-    transform: scale(1.1);
     background-color: #5d8fcf;
 }
 
-scale.volume-scale fill {
+scale.volume-scale highlight {
     background-color: #7aa2f7;
 }
 

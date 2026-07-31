@@ -1,0 +1,18 @@
+{
+  version: 2,
+  mediaFileName: 'lofi.mp3',
+  cutSegments: [
+    {
+      start: 0,
+      end: 183.1631,
+      name: '',
+      selected: true,
+    },
+    {
+      start: 451.85876699999994,
+      end: 3584.952,
+      name: '',
+      selected: true,
+    },
+  ],
+}
